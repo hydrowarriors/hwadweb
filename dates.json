@@ -1,0 +1,26 @@
+{
+  "2025-05-06": {
+    "icons": ["ikonka 3.svg", "ikonka 2.svg"],
+    "desc": "2 miejsca",
+    "services": [
+      { "name": "Bazowe", "icon": "ikonka 3.svg" },
+      { "name": "Flagowe", "icon": "ikonka 2.svg" }
+    ]
+  },
+  "2025-05-07": {
+    "icons": ["ikonka 3.svg", "ikonka 2.svg", "ikonka 6.svg"],
+    "desc": "1 miejsce",
+    "services": [
+      { "name": "Bazowe", "icon": "ikonka 3.svg" },
+      { "name": "Flagowe", "icon": "ikonka 2.svg" },
+      { "name": "Wycieraczka", "icon": "ikonka 6.svg" }
+    ]
+  },
+  "2025-05-08": {
+    "icons": ["ikonka 1.svg"],
+    "desc": "Brak miejsc",
+    "services": [
+      { "name": "Kadłub", "icon": "ikonka 1.svg" }
+    ]
+  }
+}

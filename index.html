@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydro Warriors Auto Detailing</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- FullCalendar CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet" /> -->
+</head>
+<body>
+<!-- Header/Navigation -->
+<header>
+    <div class="nav-container">
+        <div class="logo">
+            <img src="logo.png" alt="Hydro Warriors Logo">
+        </div>
+
+        <!-- HAMBURGER (widoczny tylko na mobilkach) -->
+        <div class="hamburger" id="hamburger">&#9776;</div>
+
+        <!-- NAVIGATION (desktopowa) -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#about">O Nas</a></li>
+                <li><a href="#services">Usługi</a></li>
+                <li><a href="#calendar">Kalendarz</a></li>
+                <li><a href="#location">Lokalizacja</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- NAVIGATION (mobilna rozwijana) -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="#about">O Nas</a></li>
+            <li><a href="#services">Usługi</a></li>
+            <li><a href="#calendar">Kalendarz</a></li>
+            <li><a href="#location">Lokalizacja</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <div class="nav-spacer"></div>
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="images/logohero.webp" alt="Hydro Warriors Logo" class="hero-logo">
+            <h1 style="font-weight:bold;font-size:2.6rem;">Uzbroimy każde auto do nowych wypraw!</h1>
+            <p style="font-weight:bold;">Bo Twój okręt zasługuje na opiekę godną wojownika.</p>
+        </div>
+    </section>
+    <!-- Przycisk CTA na końcu body, zawsze na wierzchu -->
+    <a href="#calendar" class="cta-button">Zaplanuj wizytę</a>
+    <!-- About Us / Storytelling -->
+    <section id="about" class="about">
+        <div class="norse-pattern"></div>
+        <div class="ship-bg"></div>
+        <h2>Nasza Saga</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/druzyna.png" alt="Hydro Warriors Team">
+            </div>
+            <div class="about-text">
+                <h3>Droga Wojownika</h3>
+                <p>Hydro Warriors narodziło się z pasji do perfekcji i szacunku dla rzemiosła. Podobnie jak nasi przodkowie wikingowie, którzy z precyzją i oddaniem budowali swoje drakkary, my podchodzimy do każdego pojazdu z najwyższą starannością i respektem.</p>
+                <p>Nasza drużyna składa się z wojowników detailingu, dla których praca nie jest jedynie obowiązkiem, ale sposobem życia. Walczymy z brudem, zanieczyszczeniami i śladami czasu, by przywrócić Twojemu pojazdowi dawną chwałę.</p>
+                <p>Tak jak wikingowie przemierzali oceany w poszukiwaniu nowych lądów, my nieustannie poszukujemy nowych technik i rozwiązań, by zapewnić Twojemu pojazdowi najlepszą możliwą ochronę. Nasze metody łączą tradycyjne rzemiosło z nowoczesnymi technologiami, tworząc usługę godną bogów z Asgardu.</p>
+            </div>
+        </div>
+        <div class="divider"></div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <h2>Nasze Usługi</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="images/ikonka 3.svg" alt="Bazowe" class="service-corner-icon">
+                <h3>Oczyszczanie Pokładu - bazowe</h3>
+                <p>Szybkie, codzienne ogarnięcie wnętrza Twojego okrętu. Idealne, gdy potrzebujesz odświeżenia bez pełnej rewolucji.</p>
+                <div class="service-price">Od 250 PLN</div>
+            </div>
+            <div class="service-card">
+                <img src="images/ikonka 1.svg" alt="Flagowe" class="service-corner-icon">
+                <h3>Oczyszczanie Pokładu - flagowe</h3>
+                <p>Kompleksowe czyszczenie wnętrza - dla tych, którzy chcą przywrócić porządek i świeżość na najwyższym poziomie.</p>
+                <div class="service-price">Od 350 PLN</div>
+            </div>
+            <div class="service-card">
+                <img src="images/ikonka 2.svg" alt="Kadłub" class="service-corner-icon">
+                <h3>Czyszczenie Kadłuba</h3>
+                <p>Kompletne zewnętrzne oczyszczanie pojazdu - dokładnie, skutecznie, z odpowiednią metodą i wykończeniem.</p>
+                <div class="service-price">Od 150 PLN</div>
+            </div>
+            <div class="service-card">
+                <img src="images/ikonka 4.svg" alt="Poszycie" class="service-corner-icon">
+                <h3>Odświeżanie poszycia</h3>
+                <p>Usługa dla tych, którzy chcą nadać lakierowi nowy blask. Łączy pełne mycie kadłuba z polerowaniem typu One Step. Idealna na przywrócenie głębi koloru i odświeżenie powierzchni.</p>
+                <div class="service-price">Od 550 PLN</div>
+            </div>
+            <div class="service-card">
+                <img src="images/ikonka 5.svg" alt="Latarnie" class="service-corner-icon">
+                <h3>Czyszczenie Latarni</h3>
+                <p>Zmatowione lampy? Przezroczystość i estetyka wracają! Usługa obejmuje polerowanie i renowację przednich reflektorów.</p>
+                <div class="service-price">150 PLN</div>
+            </div>
+            <div class="service-card">
+                <img src="images/ikonka 6.svg" alt="Wycieraczka" class="service-corner-icon">
+                <h3>Niewidzialna Wycieraczka</h3>
+                <p>Niewidoczna powłoka hydrofobowa na szyby. Krople deszczu znikają bez użycia wycieraczek - komfort i bezpieczeństwo w trudnych warunkach.</p>
+                <div class="service-price">80 PLN</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Section (FullCalendar) -->
+    <section id="calendar">
+        <h2>Wybierz dogodny termin</h2>
+        <div class="divider"></div>
+        <div id="fullcalendar" style="max-width: 700px; margin: 2rem auto; background: #1a2a3a; border-radius: 10px; padding: 1rem;"></div>
+        <div class="calendar-legend">
+            <strong>Legenda:</strong>
+            <span class="legend-item">
+                <img src="images/ikonka 3.svg" alt="Bazowe" class="legend-svg"> - Bazowe
+            </span>
+            <span class="legend-item">
+                <img src="images/ikonka 2.svg" alt="Flagowe" class="legend-svg"> - Flagowe
+            </span>
+            <span class="legend-item">
+                <img src="images/ikonka 1.svg" alt="Kadłub" class="legend-svg"> - Kadłub
+            </span>
+            <span class="legend-item">
+                <img src="images/ikonka 4.svg" alt="Poszycie" class="legend-svg"> - Poszycie
+            </span>
+            <span class="legend-item">
+                <img src="images/ikonka 5.svg" alt="Latarnie" class="legend-svg"> - Latarnie
+            </span>
+            <span class="legend-item">
+                <img src="images/ikonka 6.svg" alt="Wycieraczka" class="legend-svg"> - Wycieraczka
+            </span>
+        </div>
+        <!-- Modal do szczegółów dnia -->
+        <div id="calendar-modal" class="calendar-modal" style="display:none;">
+            <div class="calendar-modal-content">
+                <span id="calendar-modal-close" class="calendar-modal-close">&times;</span>
+                <div id="calendar-modal-body"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nagłówek nad mapą -->
+    <section id="location" class="map-frame-section">
+        <h2 style="text-align:center;font-size:2.5rem;margin-bottom:1rem;font-weight:bold;">Nasz Obóz</h2>
+        <div class="divider"></div>
+        <div class="map-frame-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11770.31922131958!2d17.799747787617537!3d51.67073288868656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ab57aa28beb1b%3A0x6eb509784d57effa!2sLewkowiec%2058%2C%2063-410%20Lewkowiec!5e0!3m2!1spl!2spl!4v1746474636945!5m2!1spl!2spl"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <!-- <img src="/images/ramka-mapka.png" alt="Mapa Ramka" class="frame-overlay"> -->
+        </div>
+    </section>
+    
+
+
+   <!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="norse-pattern"></div>
+    <h2>Wyślij Sygnał</h2>
+    <div class="contact-grid">
+        <!-- Lewa kolumna -->
+        <div class="contact-info">
+            <h3>Skontaktuj się z Nami</h3>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z' fill='%23d3d3d3'/%3E%3C/svg%3E" alt="Lokalizacja" class="contact-icon">
+                    <span>Lewkowiec, 63-400 Ostrów Wielkopolski</span>
+                </div>
+                <div class="contact-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z' fill='%23d3d3d3'/%3E%3C/svg%3E" alt="Telefon" class="contact-icon">
+                    <span>+48 795 666 714</span>
+                </div>
+                <div class="contact-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z' fill='%23d3d3d3'/%3E%3C/svg%3E" alt="Telefon" class="contact-icon">
+                    <span>+48 667 961 847</span>
+                </div>
+                <div class="contact-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z' fill='%23d3d3d3'/%3E%3C/svg%3E" alt="Email" class="contact-icon">
+                    <span>hydrowarriorshq@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Prawa kolumna -->
+        <div class="contact-socials">
+            <h3>Śledź Nasze Wyprawy</h3>
+            <div class="social-links">
+                <a href="https://www.instagram.com/twojprofil" target="_blank" class="social-link" title="Instagram">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/twojprofil" target="_blank" class="social-link" title="Facebook">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://www.tiktok.com/@twojprofil" target="_blank" class="social-link" title="TikTok">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
+                </a>
+                <a href="https://linktr.ee/twojprofil" target="_blank" class="social-link" title="Linktree">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linktree.svg" alt="Linktree">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- <img src="/api/placeholder/150/60" alt="Hydro Warriors Logo" class="footer-logo"> -->
+            <div class="footer-links">
+                <a href="#about">O Nas</a>
+                <a href="#services">Usługi</a>
+                <a href="#calendar">Kalendarz</a>
+                <a href="#location">Lokalizacja</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hydro Warriors Auto Detailing. Wszelkie prawa zastrzeżone.</p>
+                <p>Zaprojektowane z dumą wikinga.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+    <script>
+    // Funkcja do pobierania danych z dates.json i generowania eventów
+    async function getCalendarEvents() {
+      const res = await fetch('dates.json');
+      const data = await res.json();
+      const events = [];
+      for (const [date, info] of Object.entries(data)) {
+        events.push({
+          title: info.desc,
+          start: date,
+          extendedProps: {
+            services: info.services,
+            icons: info.icons,
+            desc: info.desc
+          },
+          color: info.desc.toLowerCase().includes('brak') ? '#a94442' : '#2ecc71',
+          textColor: '#fff'
+        });
+      }
+      return events;
+    }
+
+    function getDayShortName(dayIndex) {
+      // 0 = niedziela, 1 = poniedziałek, ...
+      const days = ['Nd', 'Pon', 'Wt', 'Śr', 'Czw', 'Pt', 'Sob'];
+      return days[dayIndex];
+    }
+
+    document.addEventListener('DOMContentLoaded', async function() {
+      const calendarEl = document.getElementById('fullcalendar');
+      const events = await getCalendarEvents();
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        locale: 'pl',
+        height: 'auto',
+        headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: ''
+        },
+        dayHeaderContent: function(arg) {
+          return getDayShortName(arg.dow);
+        },
+        events: events,
+        eventClick: function(info) {
+          // Wyświetl modal ze szczegółami
+          const modal = document.getElementById('calendar-modal');
+          const body = document.getElementById('calendar-modal-body');
+          let servicesHtml = '';
+          if (info.event.extendedProps.services && info.event.extendedProps.services.length) {
+            servicesHtml = '<ul style="margin:0.5rem 0 0 0;list-style:none;padding:0;">' +
+              info.event.extendedProps.services.map(s => `<li style='display:flex;align-items:center;gap:0.5em;margin:0.3em 0;'><img src='images/${s.icon}' alt='' style='width:1.5em;height:1.5em;filter:brightness(0) invert(1);'>${s.name}</li>`).join('') +
+              '</ul>';
+          } else {
+            servicesHtml = '<div style="margin-top:0.5rem;">Brak usług</div>';
+          }
+          body.innerHTML = `
+            <div style='margin:0.5rem 0;'>${info.event.extendedProps.desc}</div>
+            <div style='font-weight:bold;margin-bottom:0.5rem;'>Dostępne w tym dniu:</div>
+            ${servicesHtml}
+          `;
+          modal.style.display = 'block';
+        },
+        eventDisplay: 'block',
+        eventContent: function(arg) {
+          // Pokazuj SVG w widoku miesiąca
+          if (arg.event.extendedProps.icons && arg.event.extendedProps.icons.length) {
+            return { html: arg.event.extendedProps.icons.map(icon => `<img src='images/${icon}' class='legend-svg' style='width:1.3em;height:1.3em;margin:0 1px;vertical-align:middle;filter:brightness(0) invert(1);'>`).join('') };
+          }
+          return { html: '' };
+        },
+        dayCellDidMount: function(arg) {
+          // Dopasuj kolory komórek
+          arg.el.style.background = '#223044';
+          arg.el.style.color = '#fff';
+          arg.el.style.border = '1px solid #2c3e50';
+        },
+        dayHeaderDidMount: function(arg) {
+          arg.el.style.background = '#1a2a3a';
+          arg.el.style.color = '#d3d3d3';
+          arg.el.style.fontWeight = 'bold';
+          arg.el.style.fontSize = '1rem';
+        }
+      });
+      calendar.render();
+
+      // Modal obsługa zamykania
+      document.getElementById('calendar-modal-close').onclick = function() {
+        document.getElementById('calendar-modal').style.display = 'none';
+      };
+      window.onclick = function(event) {
+        if (event.target == document.getElementById('calendar-modal')) {
+          document.getElementById('calendar-modal').style.display = 'none';
+        }
+      };
+    });
+    </script>
+    
+    <script>
+        // Uproszczony skrypt hamburgera
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.getElementById('hamburger');
+            const mobileNav = document.getElementById('mobile-nav');
+            if (hamburger && mobileNav) {
+                hamburger.addEventListener('click', function () {
+                    mobileNav.classList.toggle('open');
+                });
+                // Zamknij menu po kliknięciu w link
+                mobileNav.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileNav.classList.remove('open');
+                    });
+                });
+            }
+        });
+    </script>
+    
+    <script>
+    // Poprawka modulara: jeśli są dwie usługi, wstaw 'lub' pomiędzy
+    function renderServicesList(services) {
+      if (!services || services.length === 0) return '<div style="margin-top:0.5rem;">Brak usług</div>';
+      if (services.length === 2) {
+        return `<div style='display:flex;align-items:center;justify-content:center;gap:0.7em;'>
+          <span style='display:flex;align-items:center;gap:0.3em;'><img src='images/${services[0].icon}' style='width:1.5em;height:1.5em;filter:brightness(0) invert(1);'>${services[0].name}</span>
+          <span style='font-weight:bold;'>lub</span>
+          <span style='display:flex;align-items:center;gap:0.3em;'><img src='images/${services[1].icon}' style='width:1.5em;height:1.5em;filter:brightness(0) invert(1);'>${services[1].name}</span>
+        </div>`;
+      }
+      return '<ul style="margin:0.5rem 0 0 0;list-style:none;padding:0;">' +
+        services.map(s => `<li style='display:flex;align-items:center;gap:0.5em;margin:0.3em 0;'><img src='images/${s.icon}' alt='' style='width:1.5em;height:1.5em;filter:brightness(0) invert(1);'>${s.name}</li>`).join('') +
+        '</ul>';
+    }
+    </script>
+    
+
+</body>
+</html>
+
+<style>
+/* Usuwam mieczyki z .divider */
+.divider::before, .divider::after {
+  content: none !important;
+}
+</style>
